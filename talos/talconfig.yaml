@@ -20,18 +20,18 @@ cniConfig:
 
 nodes:
   - hostname: "kubectl01"
-    ipAddress: "10.0.1.137"
+    ipAddress: "10.0.1.133"
     installDisk: "/dev/sda"
     machineSpec:
       secureboot: false
-    talosImageURL: factory.talos.dev/installer/09dbcadc567d93b02a1610c70d651fadbe56aeac3aaca36bc488a38f3fffe99d
+    talosImageURL: factory.talos.dev/installer/96f8c146a67c80daad900d3fc1a6976fe11062321eee9ab6ae2a6aea88b2d26e
     controlPlane: true
     networkInterfaces:
       - deviceSelector:
-          hardwareAddr: "bc:24:11:88:d1:54"
+          hardwareAddr: "bc:24:11:45:27:c0"
         dhcp: false
         addresses:
-          - "10.0.1.137/24"
+          - "10.0.1.133/24"
         routes:
           - network: "0.0.0.0/0"
             gateway: "10.0.1.1"
@@ -39,18 +39,18 @@ nodes:
         vip:
           ip: "10.0.1.51"
   - hostname: "kubectl02"
-    ipAddress: "10.0.1.235"
+    ipAddress: "10.0.1.201"
     installDisk: "/dev/sda"
     machineSpec:
       secureboot: false
-    talosImageURL: factory.talos.dev/installer/09dbcadc567d93b02a1610c70d651fadbe56aeac3aaca36bc488a38f3fffe99d
+    talosImageURL: factory.talos.dev/installer/96f8c146a67c80daad900d3fc1a6976fe11062321eee9ab6ae2a6aea88b2d26e
     controlPlane: true
     networkInterfaces:
       - deviceSelector:
-          hardwareAddr: "bc:24:11:df:fc:d5"
+          hardwareAddr: "bc:24:11:c6:67:c1"
         dhcp: false
         addresses:
-          - "10.0.1.235/24"
+          - "10.0.1.201/24"
         routes:
           - network: "0.0.0.0/0"
             gateway: "10.0.1.1"
@@ -58,18 +58,18 @@ nodes:
         vip:
           ip: "10.0.1.51"
   - hostname: "kubectl03"
-    ipAddress: "10.0.1.89"
+    ipAddress: "10.0.1.237"
     installDisk: "/dev/sda"
     machineSpec:
       secureboot: false
-    talosImageURL: factory.talos.dev/installer/09dbcadc567d93b02a1610c70d651fadbe56aeac3aaca36bc488a38f3fffe99d
+    talosImageURL: factory.talos.dev/installer/96f8c146a67c80daad900d3fc1a6976fe11062321eee9ab6ae2a6aea88b2d26e
     controlPlane: true
     networkInterfaces:
       - deviceSelector:
-          hardwareAddr: "bc:24:11:34:4c:5d"
+          hardwareAddr: "bc:24:11:52:3a:1a"
         dhcp: false
         addresses:
-          - "10.0.1.89/24"
+          - "10.0.1.237/24"
         routes:
           - network: "0.0.0.0/0"
             gateway: "10.0.1.1"
